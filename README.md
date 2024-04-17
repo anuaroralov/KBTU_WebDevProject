@@ -16,4 +16,4 @@ Anuar Oralov
 
 Kaiyrzhan Seitkarim
 
-Danabek Raimkhan
+Danabek Raimkhanov
