@@ -1,7 +1,7 @@
 # KyXH9
 Welcome to KyXH9, an innovative web platform designed to enrich your culinary journey. Whether you're a seasoned chef or just beginning to explore the world of cooking, KyXH9 offers a wide array of features to enhance your cooking experience.
 
-![Image](./assets/kyhn9.png)
+![Image](./assets/kyxh9.png)
 ## Key Features 
 Diverse Culinary Content: Explore recipes, cooking tips, and culinary guides tailored to both beginners and professional chefs.
 Interactive Community: Share your culinary creations, get feedback from peers, and connect with like-minded individuals.
