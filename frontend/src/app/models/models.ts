@@ -1,5 +1,9 @@
 export interface AuthToken {
+<<<<<<< HEAD
     token: string;
+=======
+    access: string;
+>>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
 };
 
 export interface SignUpToken {
@@ -45,14 +49,22 @@ export interface IRecipe {
     name: string;
     image: string;
     description: string;
+<<<<<<< HEAD
     category: RecipeCategory;
     steps: string[];
+=======
+    steps: string;
+>>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
 };
 
 export interface IMasterClass {
     id: number;
     name: string;
+<<<<<<< HEAD
     date: Date;
+=======
+    date: string;
+>>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
     duration: number;
     location: string;
     description: string,

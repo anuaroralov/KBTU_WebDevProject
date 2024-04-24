@@ -32,12 +32,17 @@ INSTALLED_APPS = [
     
     'recipes',
     'user',
+    'masterclass'
 ]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
+<<<<<<< HEAD
     )
+=======
+    ),
+>>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
 }
 
 MIDDLEWARE = [

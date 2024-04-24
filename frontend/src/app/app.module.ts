@@ -12,6 +12,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+<<<<<<< HEAD
+=======
+import { MatSelectModule } from '@angular/material/select';
+>>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +34,11 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { RecipesCategoryComponent } from './pages/recipes-category/recipes-category.component';
 import { RecipeItemComponent } from './pages/recipe-item/recipe-item.component';
+<<<<<<< HEAD
+=======
+import { CreateRecipeComponent } from './pages/create-recipe/create-recipe.component';
+import { CreateMasterClassComponent } from './pages/create-master-class/create-master-class.component';
+>>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
 
 @NgModule({
   declarations: [
@@ -47,6 +56,11 @@ import { RecipeItemComponent } from './pages/recipe-item/recipe-item.component';
     ErrorPageComponent,
     RecipesCategoryComponent,
     RecipeItemComponent,
+<<<<<<< HEAD
+=======
+    CreateRecipeComponent,
+    CreateMasterClassComponent,
+>>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
   ],
   imports: [
     BrowserModule,
@@ -61,6 +75,10 @@ import { RecipeItemComponent } from './pages/recipe-item/recipe-item.component';
     MatInputModule,
     MatGridListModule,
     MatCardModule,
+<<<<<<< HEAD
+=======
+    MatSelectModule,
+>>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
     FormsModule,
   ],
   providers: [
