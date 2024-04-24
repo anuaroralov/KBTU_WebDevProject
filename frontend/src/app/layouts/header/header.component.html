@@ -10,8 +10,41 @@
       <a class="link" routerLink="/recipes">Recipes</a>
       <a class="link" routerLink="/master-classes">Master classes</a>
 
-      <app-button label="Log in" mat-button (click)="openLoginDialog()"></app-button>
-      <app-button class="signup" label="Sign up" routerLink="signup"></app-button>
+
+      <app-button
+        class="createRecipe"
+        label="Create Recipe"
+        (click)="handleCreateRecipe()"
+        *ngIf="isLogged"
+      ></app-button>
+
+      <app-button
+        class="createMasterClass"
+        label="Create Master Class"
+        (click)="handleCreateMasterClass()"
+        *ngIf="isLogged"
+      ></app-button>
+
+      <app-button
+        label="Log in"
+        mat-button
+        (click)="openLoginDialog()"
+        *ngIf="!isLogged"
+      ></app-button>
+
+      <app-button
+        class="signup"
+        label="Sign up"
+        (click)="openSignUpDialog()"
+        *ngIf="!isLogged"
+      ></app-button>
+
+      <app-button
+        class="signup"
+        label="Logout"
+        (click)="handleLogout()"
+        *ngIf="isLogged"
+      ></app-button>
     </div>
   </div>
 
@@ -26,7 +59,12 @@
 
   <div class="wrapper-input">
     <img src="../../../assets/chefIcon.svg" alt="" />
-    <input type="text" placeholder="find the recipes you want" />
+    <input
+      type="text"
+      placeholder="find the recipes you want"
+      [(ngModel)]="searchQuery"
+      (input)="onSearchInput()"
+    />
     <app-button label="Search"></app-button>
   </div>
 </div>
