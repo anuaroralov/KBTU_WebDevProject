@@ -10,14 +10,15 @@ import { RecipePageComponent } from '../recipe-page/recipe-page.component';
   styleUrls: ['./recipe-item.component.scss']
 })
 export class RecipeItemComponent {
-  @Input() recipe: IRecipe = {
+  @Input() recipe: any = {
     id: 0,
     category_id: 0,
     name: '',
     image: '',
     description: '',
-    category: RecipeCategory.burger,
-    steps: [],
+    steps: "",
+    category_title: "",
+    username: "",
   };
 
   constructor(private dialog: MatDialog) { }

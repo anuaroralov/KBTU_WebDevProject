@@ -29,8 +29,9 @@ export class LoginPageComponent {
   }
 
   login(): void {
-    this.loginService.login(this.username, this.password).subscribe((data) => {
-      localStorage.setItem('token', data.token);
+    this.loginService.login(this.username, this.password).subscribe((data) => {      
+      localStorage.setItem('token', data.access);
+      localStorage.setItem('username', this.username);
       this.isLogged = true;
       this.loginSuccess.emit({ isLogged: this.isLogged, username: this.username, password: this.password });
     })
