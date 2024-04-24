@@ -39,7 +39,6 @@ export class MasterClassesPageComponent implements OnInit {
     return result;
   }
 
-<<<<<<< HEAD
   getDate(date: Date): string {
     const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -52,21 +51,6 @@ export class MasterClassesPageComponent implements OnInit {
     const minutes = date.getMinutes().toString().padStart(2, '0');
 
     return `${weekday}, ${day} ${month} ${year} ${hours}:${minutes}`;
-=======
-  getDate(dateStr: string): string {
-    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  
-  const date = new Date(dateStr);
-  const weekday = daysOfWeek[date.getDay()];
-  const day = date.getDate();
-  const month = monthsOfYear[date.getMonth()];
-  const year = date.getFullYear();
-  const hours = date.getHours();
-  const minutes = date.getMinutes().toString().padStart(2, '0');
-  
-  return `${weekday}, ${day} ${month} ${year} ${hours}:${minutes}`;
->>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
   }
 
   onRegisterClick(id: number): void {

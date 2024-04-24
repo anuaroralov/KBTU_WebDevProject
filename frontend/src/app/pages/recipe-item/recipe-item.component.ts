@@ -16,12 +16,8 @@ export class RecipeItemComponent {
     name: '',
     image: '',
     description: '',
-<<<<<<< HEAD
     category: RecipeCategory.burger,
     steps: [],
-=======
-    steps: "",
->>>>>>> a96d3f678b85bf0d0073e491f2e93b6641975979
   };
 
   constructor(private dialog: MatDialog) { }
