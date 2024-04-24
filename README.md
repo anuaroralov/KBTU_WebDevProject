@@ -7,7 +7,7 @@ Diverse Culinary Content: Explore recipes, cooking tips, and culinary guides tai
 Interactive Community: Share your culinary creations, get feedback from peers, and connect with like-minded individuals.
 User-Friendly Design: With a focus on user experience, our platform is designed to be intuitive and accessible to everyone.
 # Technologies 
-Chef.in is built using the following technologies: 
+KyXH9 is built using the following technologies: 
 
 Angular: For a dynamic and responsive client-side application.
 Django: A high-level Python Web framework that encourages rapid development and clean, pragmatic design for our backend.
