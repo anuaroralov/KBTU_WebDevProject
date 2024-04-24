@@ -25,7 +25,7 @@ export class CreateMasterClassComponent {
 
 
 
-  constructor(private masterClassService: MasterclassService, @Inject(MAT_DIALOG_DATA) public data: IMasterClass, private dialogRef: MatDialogRef<CreateMasterClassComponent>) { }
+  constructor(private masterClassService: MasterclassService, private dialogRef: MatDialogRef<CreateMasterClassComponent>) { }
 
 
 
@@ -41,8 +41,7 @@ export class CreateMasterClassComponent {
       const price = formData.price
       const maxAttendees = formData.maxAttendees;
 
-      const newMasterClass : IMasterClass = {
-        id : 1,
+      const newMasterClass : any = {
         name : name!,
         date: date!,
         duration : duration!,
@@ -51,9 +50,8 @@ export class CreateMasterClassComponent {
         image : image!,
         price : parseInt(price!),
         maxAttendees : maxAttendees!,
-        attendees : []
+        participants : 0,
       }
-
 
       this.masterClassService.createMasterClass(newMasterClass).subscribe(
         (response : any) => {
@@ -63,6 +61,8 @@ export class CreateMasterClassComponent {
           console.log('Error: ', error);
         }
       );
+
+      this.dialogRef.close();
     }
   }
 

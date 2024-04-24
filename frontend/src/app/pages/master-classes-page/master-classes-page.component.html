@@ -15,13 +15,19 @@
             <mat-card-subtitle>{{
               getDate(masterClass.date)
             }}</mat-card-subtitle>
+            <mat-card-subtitle>
+              {{ masterClass.location }}
+            </mat-card-subtitle>
           </mat-card-header>
 
           <mat-card-content>
             <p>{{ masterClass.description }}</p>
           </mat-card-content>
           <mat-card-content class="wrapper-list">
-            <p><b>Participants:</b> {{ getUserList(masterClass.attendees) }}</p>
+            <p><b>Participants:</b> {{ masterClass.participants }} / {{ masterClass.maxAttendees }}</p>
+          </mat-card-content>
+          <mat-card-content class="wrapper-list">
+            <p><b>Price:</b> {{ masterClass.price }}$</p>
           </mat-card-content>
           <mat-card-actions>
             <button
